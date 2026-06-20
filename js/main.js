@@ -174,4 +174,16 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Initialize with French
   updateContent();
+
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const isExpanded = navMenu.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
+        });
+    }
 });
