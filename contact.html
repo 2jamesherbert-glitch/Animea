@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Animéa - Téléphone, email, Instagram et formulaire de contact">
+    <title>Animéa - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">♡ Animéa</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Prestations</a></li>
+                <li><a href="team.html" data-i18n="nav.team">Animaux & Équipe</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                <li class="lang-toggle">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="section-title" data-i18n="contact.pageTitle">Nous Contacter</h1>
+        <p class="section-subtitle" data-i18n="contact.pageSubtitle">
+            Une question? Un projet? N’hésitez pas à nous écrire
+        </p>
+    </section>
+
+    <section style="background-color: var(--white);">
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3 data-i18n="contact.phone">Téléphone</h3>
+                <p><a href="tel:+41782080210">+41 78 208 02 10</a></p>
+            </div>
+            <div class="contact-item">
+                <h3 data-i18n="contact.email">Email</h3>
+                <p><a href="mailto:leafuret@gmail.com">leafuret@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <h3 data-i18n="contact.location">Localisation</h3>
+                <p>Leysin, Suisse</p>
+            </div>
+            <div class="contact-item">
+                <h3 data-i18n="contact.instagram">Instagram</h3>
+                <p><a href="https://instagram.com/animea_mediation" target="_blank">@animea_mediation</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <h2 data-i18n="contact.formTitle">Envoyez-nous un message</h2>
+            
+            <div class="form-group">
+                <label for="name" data-i18n="contact.formName">Nom complet</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" data-i18n="contact.formEmail">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone" data-i18n="contact.formPhone">Téléphone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="message" data-i18n="contact.formMessage">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn" data-i18n="contact.formSubmit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Animéa. <span data-i18n="footer.rights">Tous droits réservés</span></p>
+        <p><a href="https://instagram.com/animea_mediation" target="_blank" data-i18n="footer.instagram">Suivez-nous sur Instagram</a> @animea_mediation</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
