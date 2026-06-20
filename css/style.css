@@ -54,6 +54,24 @@ nav {
   width: auto;
 }
 
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--charcoal);
+  transition: all 0.3s ease;
+}
+
 .nav-menu {
   display: flex;
   list-style: none;
@@ -352,6 +370,10 @@ footer a:hover {
 
   header {
     padding: 0.5rem 1rem;
+  }
+
+    .mobile-menu-toggle {
+    display: flex;
   }
 
   .logo img {
