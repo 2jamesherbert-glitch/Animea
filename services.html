@@ -25,58 +25,72 @@
         </nav>
     </header>
 
-    <section>
-        <h1 class="section-title" data-i18n="services.pageTitle">Nos Prestations</h1>
-        <p class="section-subtitle" data-i18n="services.pageSubtitle">
-            Accompagnement adapté pour enfants, adultes, seniors et institutions
-        </p>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/Horse 2.jpg') center/cover; height: 40vh; display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center; color: white;">
+            <h1 style="font-size: 3rem; margin: 0; letter-spacing: 2px;">NOS PRESTATIONS</h1>
+            <p style="font-size: 1.2rem; margin-top: 1rem; font-style: italic;">Accompagnement adapté à vos besoins</p>
+        </div>
     </section>
 
-    <section style="background-color: var(--white);">
-        <div class="cards-container">
-            <div class="card">
-                <h3 data-i18n="services.individual.title">Séances Individuelles</h3>
-                <p data-i18n="services.individual.description">
-                    Accompagnement personnalisé dans un cadre bienveillant. Les séances individuelles 
-                    permettent un travail ciblé sur les besoins spécifiques de chaque personne, qu’il s’agisse 
-                    de développer la confiance en soi, de favoriser l’apaisement émotionnel ou de renforcer 
-                    les compétences sociales.
-                </p>
+    <!-- Services Grid -->
+    <section style="padding: 80px 5%; background: white;">
+        <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto;">
+            
+            <!-- Service 1 -->
+            <div class="service-card" style="text-align: center; padding: 30px; background: #f7f5f2; border-radius: 10px;">
+                <div style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden; border: 4px solid #5bb4b4;">
+                    <img src="images/Horse 3.jpg" alt="Séances Individuelles" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="color: #3f424a; font-size: 1.5rem; margin-bottom: 15px;">Séances Individuelles</h3>
+                <p style="color: #666; line-height: 1.6;">Accompagnement personnalisé dans un cadre bienveillant. Les séances individuelles permettent un travail ciblé sur les besoins spécifiques de chaque personne, qu'il s'agisse de développer la confiance en soi, de favoriser l'égaiement émotionnel ou de renforcer les compétences sociales.</p>
             </div>
-            <div class="card">
-                <h3 data-i18n="services.group.title">Séances en Groupe</h3>
-                <p data-i18n="services.group.description">
-                    Rencontres collectives favorisant le lien social et l’entraide. Les activités de groupe 
-                    permettent de travailler la coopération, la communication et le respect mutuel dans un 
-                    environnement sécurisant et ludique.
-                </p>
+
+            <!-- Service 2 -->
+            <div class="service-card" style="text-align: center; padding: 30px; background: #f7f5f2; border-radius: 10px;">
+                <div style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden; border: 4px solid #5bb4b4;">
+                    <img src="images/Horse sunset.webp" alt="Séances en Groupe" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="color: #3f424a; font-size: 1.5rem; margin-bottom: 15px;">Séances en Groupe</h3>
+                <p style="color: #666; line-height: 1.6;">Rencontres collectives favorisant le lien social et l'entraide. Les activités de groupe permettent de travailler la coopération, la communication et le respect mutuel dans un environnement sécurisant et ludique.</p>
             </div>
-            <div class="card">
-                <h3 data-i18n="services.institutional.title">Interventions en Institutions</h3>
-                <p data-i18n="services.institutional.description">
-                    Programmes adaptés pour écoles, EMS, centres spécialisés et autres institutions. 
-                    Nous développons des projets sur mesure en collaboration avec les équipes professionnelles 
-                    pour répondre aux objectifs spécifiques de chaque structure.
-                </p>
+
+            <!-- Service 3 -->
+            <div class="service-card" style="text-align: center; padding: 30px; background: #f7f5f2; border-radius: 10px;">
+                <div style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden; border: 4px solid #5bb4b4;">
+                    <img src="images/Woman on horse.avif" alt="Interventions en Institutions" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="color: #3f424a; font-size: 1.5rem; margin-bottom: 15px;">Interventions en Institutions</h3>
+                <p style="color: #666; line-height: 1.6;">Programmes adaptés pour écoles, EMS, centres spécialisés et autres institutions. Nous développons des projets sur mesure en collaboration avec les équipes professionnelles pour répondre aux objectifs spécifiques de chaque structure.</p>
             </div>
         </div>
     </section>
 
-    <section>
-        <h2 class="section-title" data-i18n="services.howTitle">Comment se déroule une séance?</h2>
-        <p class="team-intro" data-i18n="services.howText">
-            Chaque séance est adaptée aux besoins et au rythme de la personne accompagnée. 
-            Après un premier entretien pour définir les objectifs, les rencontres se déroulent 
-            dans le respect du bien-être animal et humain. Les activités peuvent inclure le soin 
-            aux animaux, des exercices d’observation, de la relaxation ou des jeux interactifs.
-        </p>
-        <div class="text-center mt-2">
-            <a href="contact.html" class="btn" data-i18n="nav.contact">Contact</a>
+    <!-- How it works -->
+    <section style="padding: 80px 5%; background: #f7f5f2;">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 2.5rem; color: #5bb4b4; margin-bottom: 15px; letter-spacing: 1px;">COMMENT SE DÉROULE UNE SÉANCE?</h2>
+            <p style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #c7af8e; margin-bottom: 40px;">Une approche structurée et bienveillante</p>
+            <p style="color: #666; line-height: 1.8; font-size: 1.1rem; text-align: left;">
+                Chaque séance est adaptée aux besoins et au rythme de la personne accompagnée. 
+                Après un premier entretien pour définir les objectifs, les rencontres se déroulent 
+                dans le respect du bien-être animal et humain. Les activités peuvent inclure le soin 
+                aux animaux, des exercices d'observation, de la relaxation ou des jeux interactifs. 
+                Un suivi régulier permet d'évaluer les progrès et d'ajuster l'accompagnement.
+            </p>
         </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 80px 5%; background: white; text-align: center;">
+        <h2 style="font-size: 2rem; color: #3f424a; margin-bottom: 20px;">Intéressé(e) par nos prestations?</h2>
+        <p style="color: #666; font-size: 1.1rem; margin-bottom: 30px;">N'hésitez pas à nous contacter pour plus d'informations</p>
+        <a href="contact.html" class="btn" style="display: inline-block; background: #5bb4b4; color: white; padding: 15px 40px; text-decoration: none; border-radius: 5px; font-size: 1.1rem; transition: all 0.3s;">Nous contacter</a>
     </section>
 
     <footer>
-        <p>&copy; 2026 Animéa. <span data-i18n="footer.rights">Tous droits réservés</span></p>
+        <p>&copy;2026 Animéa. <span data-i18n="footer.rights">Tous droits réservés</span></p>
         <p><a href="https://instagram.com/animea_mediation" target="_blank" data-i18n="footer.instagram">Suivez-nous sur Instagram</a> @animea_mediation</p>
     </footer>
 
