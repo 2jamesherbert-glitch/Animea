@@ -8,104 +8,162 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>
+                <span>Contact : <a href="mailto:contact@animea.ch">contact@animea.ch</a></span>
+                <span> | <a href="tel:+41123456789">+41 12 345 67 89</a></span>
+            </div>
+            <div class="social-links">
+                <a href="https://instagram.com/animea_mediation" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
     <header>
-        <nav>
-            <a href="index.html" class="logo"><img src="Animea-Logo.png" alt="Animéa"></a>
-                                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-            <ul class="nav-menu">
-                <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
-                <li><a href="services.html" data-i18n="nav.services">Prestations</a></li>
-                <li><a href="team.html" data-i18n="nav.team">Animaux & Équipe</a></li>
-                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-                <li class="lang-toggle">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/Animea-Logo.png" alt="Animéa"></a>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="services.html" data-i18n="nav.services">Prestations</a></li>
+                    <li><a href="team.html" data-i18n="nav.team">Animaux & Équipe</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <div class="lang-toggle">
                     <button class="lang-btn active" data-lang="fr">FR</button>
                     <button class="lang-btn" data-lang="en">EN</button>
-                </li>
-            </ul>
-        </nav>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/hero-horse.jpg');">
         <div class="hero-content">
-            <h1 data-i18n="home.heroTitle">La médiation animale au service du lien, du calme et du mieux-être</h1>
-            <p data-i18n="home.heroSubtitle">Intervenante en médiation animale. Accompagnement des personnes à travers la relation avec l’animal, au service du lien social, du bien-être humain et animal.</p>
-            <a href="contact.html" class="btn" data-i18n="home.heroCta">Nous contacter</a>
+            <h1>
+                LA MÉDIATION ANIMALE AU SERVICE DU<br>
+                <span>lien, du calme et du mieux-être</span>
+            </h1>
+            <p data-i18n="home.heroSubtitle">Intervenante en médiation animale. Accompagnement des personnes à travers la relation avec l'animal, au service du lien social, du bien-être humain et animal.</p>
+            <a href="contact.html" class="btn" data-i18n="home.heroBtn">Nous contacter</a>
         </div>
     </section>
 
+    <!-- About Section -->
     <section>
-        <h2 class="section-title" data-i18n="home.aboutTitle">Qu’est-ce que la médiation animale?</h2>
-        <p class="team-intro" data-i18n="home.aboutText">
-            Animéa propose un accompagnement professionnel à travers la relation avec l’animal, 
-            dans le respect de la personne, du rythme de chacun et du bien-être animal. 
-            Chevaux, chiens et petits animaux deviennent des partenaires de rencontre, 
-            d’apaisement et de confiance dans un cadre structuré et bienveillant.
-        </p>
-    </section>
+        <div class="container">
+            <div class="section-title">
+                <span class="script" data-i18n="home.aboutScript">Médiation animale</span>
+                <div class="divider"></div>
+                <p data-i18n="home.aboutTagline">Une approche unique pour créer du lien et favoriser le mieux-être</p>
+            </div>
 
-    <section style="background-color: var(--white);">
-        <h2 class="section-title" data-i18n="home.servicesTitle">Nos Prestations</h2>
-        <p class="section-subtitle" data-i18n="home.servicesSubtitle">Accompagnement adapté à vos besoins</p>
-        
-        <div class="cards-container">
-            <div class="card">
-                <h3 data-i18n="services.individual.title">Séances Individuelles</h3>
-                <p data-i18n="services.individual.description">
-                    Accompagnement personnalisé dans un cadre bienveillant. Les séances individuelles 
-                    permettent un travail ciblé sur les besoins spécifiques de chaque personne.
-                </p>
+            <div class="two-column">
+                <div class="column-text">
+                    <h3 data-i18n="home.aboutTitle">Qu'est-ce que la médiation animale?</h3>
+                    <p data-i18n="home.aboutText1">Animéa propose un accompagnement professionnel à travers la relation avec l'animal, dans le respect de la personne, du rythme de chacun et du bien-être animal.</p>
+                    <p data-i18n="home.aboutText2">Chevaux, chiens et petits animaux deviennent des partenaires de rencontre, d'apaisement et de confiance dans un cadre structuré et bienveillant.</p>
+                </div>
+                <div class="column-image">
+                    <img src="images/hero-horse.jpg" alt="Médiation animale avec cheval">
+                </div>
             </div>
-            <div class="card">
-                <h3 data-i18n="services.group.title">Séances en Groupe</h3>
-                <p data-i18n="services.group.description">
-                    Rencontres collectives favorisant le lien social et l’entraide. Les activités de groupe 
-                    permettent de travailler la coopération et la communication.
-                </p>
-            </div>
-            <div class="card">
-                <h3 data-i18n="services.institutional.title">Interventions en Institutions</h3>
-                <p data-i18n="services.institutional.description">
-                    Programmes adaptés pour écoles, EMS, centres spécialisés et autres institutions. 
-                    Projets sur mesure en collaboration avec les équipes professionnelles.
-                </p>
-            </div>
-        </div>
-        <div class="text-center mt-2">
-            <a href="services.html" class="btn btn-secondary" data-i18n="nav.services">Prestations</a>
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section style="background-color: var(--soft-white);">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="home.servicesTitle">NOS PRESTATIONS</h2>
+                <span class="script" data-i18n="home.servicesScript">Accompagnement adapté à vos besoins</span>
+                <div class="divider"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images/hero-horse.jpg" alt="Séances Individuelles">
+                    <h3 data-i18n="home.service1Title">Séances Individuelles</h3>
+                    <p data-i18n="home.service1Text">Accompagnement personnalisé dans un cadre bienveillant. Les séances individuelles permettent un travail en profondeur sur vos objectifs personnels.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/hero-horse.jpg" alt="Séances en Groupe">
+                    <h3 data-i18n="home.service2Title">Séances en Groupe</h3>
+                    <p data-i18n="home.service2Text">Rencontres collectives favorisant le lien social et l'entraide. Les activités de groupe permettent de partager des expériences enrichissantes.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/hero-horse.jpg" alt="Interventions en Institutions">
+                    <h3 data-i18n="home.service3Title">Interventions en Institutions</h3>
+                    <p data-i18n="home.service3Text">Programmes adaptés pour écoles, EMS, centres spécialisés et autres institutions. Nous développons des projets sur mesure.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="services.html" class="btn" data-i18n="home.servicesBtn">Découvrir toutes nos prestations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animals Section -->
     <section>
-        <h2 class="section-title" data-i18n="team.animalsTitle">Nos Animaux Partenaires</h2>
-        <div class="cards-container">
-            <div class="card animal-card">
-                <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400" alt="Cheval" class="animal-image">
-                <h3>Nos Chevaux</h3>
-                <p>Partenaires majestueux pour l’apaisement et la confiance.</p>
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="home.animalsTitle">NOS ANIMAUX PARTENAIRES</h2>
+                <span class="script">Nos comp agnons à quatre pattes</span>
+                <div class="divider"></div>
             </div>
-            <div class="card animal-card">
-                <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400" alt="Chien" class="animal-image">
-                <h3>Nos Chiens</h3>
-                <p>Compagnons chaleureux pour le lien et le réconfort.</p>
+
+            <div class="two-column reverse">
+                <div class="column-image">
+                    <img src="images/hero-horse.jpg" alt="Nos chevaux">
+                </div>
+                <div class="column-text">
+                    <h3 data-i18n="home.horsesTitle">Nos Chevaux</h3>
+                    <p data-i18n="home.horsesText">Partenaires majestueux pour l'apaisement et la confiance. Nos chevaux sont sélectionnés pour leur tempérament calme et leur capacité d'écoute.</p>
+                </div>
             </div>
-            <div class="card animal-card">
-                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=400" alt="Lapins" class="animal-image">
-                <h3>Petits Animaux</h3>
-                <p>Lapins, cochons d’Inde et poussins pour la douceur et l’éveil sensoriel.</p>
+
+            <div class="two-column">
+                <div class="column-text">
+                    <h3 data-i18n="home.dogsTitle">Nos Chiens</h3>
+                    <p data-i18n="home.dogsText">Compagnons chaleureux pour le lien et le réconfort. Ils apportent douceur et présence dans les moments de partage.</p>
+                </div>
+                <div class="column-image">
+                    <img src="images/hero-horse.jpg" alt="Nos chiens">
+                </div>
             </div>
-        </div>
-        <div class="text-center mt-2">
-            <a href="team.html" class="btn btn-secondary" data-i18n="nav.team">Animaux & Équipe</a>
+
+            <div class="two-column reverse">
+                <div class="column-image">
+                    <img src="images/hero-horse.jpg" alt="Petits animaux">
+                </div>
+                <div class="column-text">
+                    <h3 data-i18n="home.smallAnimalsTitle">Petits Animaux</h3>
+                    <p data-i18n="home.smallAnimalsText">Lapins, cochons d'Inde et poussins pour la douceur et l'éveil sensoriel. Parfaits pour les premières approches et le travail de la motricité fine.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Animéa. <span data-i18n="footer.rights">Tous droits réservés</span></p>
-        <p><a href="https://instagram.com/animea_mediation" target="_blank" data-i18n="footer.instagram">Suivez-nous sur Instagram</a> @animea_mediation</p>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://instagram.com/animea_mediation" target="_blank" aria-label="Instagram">Instagram</a>
+            </div>
+            <p>&copy; 2026 Animéa. <span data-i18n="footer.rights">Tous droits réservés</span></p>
+            <p>@animea_mediation</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
