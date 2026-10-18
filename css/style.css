@@ -81,7 +81,7 @@ header {
 }
 
 .logo img {
-    height: 70px;
+    height: 100px;
     width: auto;
 }
 
@@ -108,7 +108,7 @@ nav {
 }
 
 .nav-menu a:hover {
-    color: var(--primary-turquoise);
+    color: var(#c7af8e);
 }
 
 .nav-menu a::after {
@@ -118,7 +118,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--primary-turquoise);
+    background-color: var(#c7af8e);
     transition: width 0.3s ease;
 }
 
@@ -145,7 +145,7 @@ nav {
 
 .lang-toggle button.active,
 .lang-toggle button:hover {
-    background: var(--primary-turquoise);
+    background: var(#c7af8e);
 }
 
 /* Mobile Menu Toggle */
