@@ -118,7 +118,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(#c7af8e);
+    background-color: #c7af8e;
     transition: width 0.3s ease;
 }
 
@@ -145,7 +145,7 @@ nav {
 
 .lang-toggle button.active,
 .lang-toggle button:hover {
-    background: var(#c7af8e);
+    background-color: #c7af8e;
 }
 
 /* Mobile Menu Toggle */
